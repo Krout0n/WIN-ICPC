@@ -3,6 +3,9 @@ while True:
     if m == f == r == -1:
         break
     s = m + f
+    if m == -1 or f == -1:
+        print('F')
+        continue
     if s >= 80:
         rank = 'A'
     elif 65 <= s < 80:
@@ -11,7 +14,7 @@ while True:
         rank = 'C'
     elif 30 <= s < 50:
         rank = 'D'
-    elif m == -1 or f == -1 or s < 30:
+    elif s < 30:
         rank = 'F'
     print(rank)
     
