@@ -1,4 +1,4 @@
-x = input()
+x = input().lower()
 c = 0
 while True:
     s = input()
@@ -6,7 +6,7 @@ while True:
         break
     s = s.split()
     for i in s:
-        if x == i:
+        if x == i.lower():
             c += 1
 
 print(c)

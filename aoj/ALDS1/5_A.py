@@ -1,3 +1,6 @@
+import sys
+sys.setrecursionlimit(10000)
+
 input()
 a = [int(i) for i in input().split()]
 
