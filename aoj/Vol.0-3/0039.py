@@ -9,6 +9,7 @@ d = {
     'D': 500,
     'M': 1000
 }
+
 for s in sys.stdin:
     c = 0
     for i,j in enumerate(list(s)):
