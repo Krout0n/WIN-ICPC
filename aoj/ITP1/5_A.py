@@ -1,16 +1,6 @@
 def build_line(width, i):
     s = ''
-    if i % 2 == 0:
-        while len(s) < width:
-            if len(s) % 2 == 0:
-                s += '#'
-            else:
-                s += '.'
-    else:
-        while len(s) < width:
-            if len(s) % 2 == 0:
-                s += '.'
-            else:
+    while len(s) < width:
                 s += '#'
     return s
 
