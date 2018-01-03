@@ -1,9 +1,13 @@
-d = { chr(i): 0 for i in range(96, 123) }
-s = list(input())
+import sys
+
+d = { chr(i): 0 for i in range(97, 123) }
+s = [i for i in sys.stdin]
 for i in s:
-    try:
-        d[i.lower()] += 1
-    except:
-        continue
+    i = list(i)
+    for c in i:
+        try: 
+            d[c.lower()] += 1
+        except:
+            continue
 for i,j in d.items():
     print('{} : {}'.format(i,j))
