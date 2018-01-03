@@ -1,2 +1,2 @@
-a, b = [int(i) for i in input().split()]
-print('{} {} {}'.format(a/b,a%b,format(a/b, '.5f')))
+a,b = map(float, input().split())
+print(int(a/b), int(a%b), format(a/b, '.5f'))
