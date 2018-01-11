@@ -2,7 +2,6 @@ y = [int(input()) for i in range(int(input()))]
 y = sorted(set(y))
 c = 1
 max_c = 1
-print(y)
 for i,j in enumerate(y):
     try:
         if j < y[i+1]:
