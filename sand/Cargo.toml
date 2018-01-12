@@ -1,0 +1,10 @@
+[package]
+name = "sand"
+version = "0.1.0"
+authors = ["Knium <hi.im.knium@gmail.com>"]
+
+[dependencies]
+
+[[bin]]
+name = "sand"
+path = "sand.rs"
