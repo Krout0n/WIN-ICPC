@@ -1,0 +1,1 @@
+print('NO') if input().replace('eraser', '').replace('erase', '').replace('dreamer', '').replace('dream', '') else print('YES')
